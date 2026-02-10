@@ -1,0 +1,15 @@
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{% url "post-detail-page" slug="the-mountains" %}">
+            <img src="{% static "blog/images/mountains.jpg" %}" alt='Mountain'/>
+            <div class='post__content'>
+                <h3>Mountain Hiking</h3>
+                <p>
+                    {% lorem 1 b random %}
+                </p>
+            </div>
+        </a>
+
+    </article>
+</li>

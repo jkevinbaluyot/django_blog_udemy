@@ -15,6 +15,16 @@
     </head>
     <body>       
         <script src="" async defer></script>
+        <header id='main-navigation'>
+            <h1> 
+                <a href="{% url "starting-page" %}">
+                    John Kevin's Blog
+                </a>
+            </h1>
+            <nav >
+                <a href="{% url "posts-page" %}">All Posts</a>
+            </nav>
+        </header>
         {% block content %}
         {% endblock content %}
     </body>
